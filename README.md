@@ -6,9 +6,15 @@ This repository contains files for a Springboard (https://www.springboard.com/) 
 The following files are of note:
 
 BABSreport.pdf is the final project report.
+
 BABSreportWithCode.pdf is the report with the r code used included.
+
 BABSpresentation.html is an html slide deck report of the project.
-The .rmd files are the r markdown files used to create these presentations
-WorkingFiles contains .rmd files and .pdf files of working code used during the project. Note that not all the data files used are present in this file, please contact me if you would like these.
+
+The .rmd files are the r markdown files used to create these presentations.
+
+WorkingFiles contains .rmd files and .pdf files of working code used during the project. 
+
+Note that not all the data files used are present, please contact me if you would like these.
 
 Please get in touch if you have any questions.
