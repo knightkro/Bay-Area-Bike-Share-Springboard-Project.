@@ -60,7 +60,7 @@ The Bay Area Bike Share is a bike rental system consisting of 700 bikes and 70 s
 - San Jose 
 - San Francisco. 
 
-Anyone can purchase a 24 hour or 3 day pass from staion kiosks. 1 year memberships are also available online. Users can then hire and drop off bikes at any station. The system is designed to encourage short trips, hence trips over 30 minutes incur late fees. $4 is charged for a 30-60 minute trip, $7 is added for each additional 30 minutes.
+Anyone can purchase a 24 hour or 3 day pass from stain kiosks. 1 year memberships are also available online. Users can then hire and drop off bikes at any station. The system is designed to encourage short trips, hence trips over 30 minutes incur late fees. $4 is charged for a 30-60 minute trip, $7 is added for each additional 30 minutes.
 
 ## Data
 
@@ -126,7 +126,7 @@ ggplot(trip_per_day, aes(x = Date,
 
 ```
 
-- Usage also drops on holidays. (Note that Independence day fell on a saturday so was observed on friday the 3rd.)
+- Usage also drops on holidays. (Note that Independence day fell on a Saturday so was observed on Friday the 3rd.)
 
 ```{r fig.width=7, fig.height=3, fig.align='center'}
 trip_per_day <- trip %>% 
@@ -228,7 +228,7 @@ ggplot(trip_l, aes(x= Duration))+
 
 - The longest trip made lasted `r round(max(trip$Duration)/ ( 60 * 60 *24))` days! This trip would have technically incurred late fees of $67153. Perhaps this user didn't understand the *sharing* system. Or perhaps this was a recovered stolen bike? 
 
-- The furthest distance travelled between stations was `r round(max(trip_dist$distance))` km, from San Jose to San Francisco, a trip of more than 8 hours:
+- The furthest distance traveled between stations was `r round(max(trip_dist$distance))` km, from San Jose to San Francisco, a trip of more than 8 hours:
 
 ```{r fig.width=7, fig.align='center'}
 longest_trip <- trip_dist %>% 
@@ -548,7 +548,7 @@ Note the number one ranked stations in each city:
 - **San Francisco**: *San Francisco Caltrain (Townsend at 4th)*.
 - **San Jose**: *San Jose Diridon Caltrain station*.
 
-We see that they are all at Caltrain stations. This indicates that commuters are using the bikes on their trips to work. Also note that the least busy station in San Francisco is at the CIty Hall, perhaps the workers there could lead by example...
+We see that they are all at Caltrain stations. This indicates that commuters are using the bikes on their trips to work. Also note that the least busy station in San Francisco is at the City Hall, perhaps the workers there could lead by example...
 
 
 
@@ -797,7 +797,7 @@ We see that cycling is common in Marina District, Lower Haight and Mission Distr
 
  *A very popular ride for visitors to San Francisco is the ride across the Golden Gate Bridge to Sausalito.*
 
-Bike sations located at either ends of the bridge would seemingly be popular. We see that other recreational areas like the park are also popular with cyclists. We can look at [TripAdvisor](https://www.tripadvisor.co.uk/Attractions-g60713-Activities-San_Francisco_California.html#MAPVIEW) to see the locations of popular tourist hotspots. In Figure 2 we see these locations and we note that many of the popular tourist hotspots are not catered for by BABS. Expansion into these areas may encourage more leisure, weekend use.
+Bike stations located at either ends of the bridge would seemingly be popular. We see that other recreational areas like the park are also popular with cyclists. We can look at [TripAdvisor](https://www.tripadvisor.co.uk/Attractions-g60713-Activities-San_Francisco_California.html#MAPVIEW) to see the locations of popular tourist hotspots. In Figure 2 we see these locations and we note that many of the popular tourist hotspots are not catered for by BABS. Expansion into these areas may encourage more leisure, weekend use.
 
 
 ![Tourist hotspots in San Francisco from TripAdvisor.](Screenshot2016-09-2709.10.13.png)
@@ -899,7 +899,7 @@ ggplot(inOut, aes(x = Station,
 
 
 ## Imbalance in San Francisco
-Wes see that the imbalanced stations are mainly located in the busy San Francisco.
+We see that the imbalanced stations are mainly located in the busy San Francisco.
 ```{r fig.width=8, fig.align='center'}
 location <- c( mean(inOutSF$long), mean(inOutSF$lat))
 BABSmap <- get_map(location,maptype ="roadmap", zoom=14)
